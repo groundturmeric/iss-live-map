@@ -1,0 +1,106 @@
+.continent {
+	/* fill: #ededed; */
+	stroke: #d0d0d0;
+	stroke-width: 0.8;
+	z-index: -1;
+
+}
+
+body{
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-weight: bold; */
+	background-color: #3b484b;
+	text-align: center;
+	color: #131e21;
+}
+
+/* h1{
+	padding: 0;
+	margin-top: 20;
+	margin-bottom: 0;
+}
+
+p{
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+} */
+
+.dark-continent {
+	fill: #eeeeee;
+	stroke: #bbbbbb;
+}
+
+.graticule {
+	stroke: rgb(222, 222, 222);
+	stroke-width: 0.5;
+}
+
+.grid {
+	fill: none;
+	stroke: #333;
+}
+
+.issCircle {
+    stroke: #555155;
+    stroke-width: 0;
+}
+
+.c2 {
+	stroke-width: 0.5;
+}
+
+.non-c2 {
+	stroke-width: 0.5
+}
+
+.diamonds {
+    stroke-width: 0;
+}
+
+.labels {
+	font-family: sans-serif;
+	font-size: 12px;
+	/* fill: #3c373d; */
+}
+
+.tooltip {
+    position: absolute;
+	border-radius: 34px;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-weight: bold; */
+    font-size: 8pt;
+    /* background-color:rgba(246,201,0,0.4); */
+	background-color:azure;
+	/* color: #131e21; */
+	opacity: 0.9;
+    padding: 13px;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+  #issCircleRipple {
+
+	animation: mymove 1.5s infinite;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	}
+	
+
+	@keyframes mymove {
+		/* 50%{ r:25px} */
+		50% {opacity:0.2}
+		100% {r: 100px; opacity:0; fill:azure}
+
+	  }
+	  
